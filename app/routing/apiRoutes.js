@@ -44,7 +44,6 @@ module.exports = function(app){
             }
         }
     
-
     // save user's data to database
     friends.push(userData);
 
