@@ -7,7 +7,7 @@ module.exports = function(app){
     // 2. callback function takes in a request and response object from express that we use the response object to send back HTML
 
 app.get("/survey", function(req, res) {
-    console.log(res)
+    //console.log(res)
     // Use express .sendFile method which takes the path of the file we want to serve to the client
     // The path.join() method joins all given path segments together
     // __dirname returns the path of the current application

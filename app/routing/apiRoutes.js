@@ -28,7 +28,7 @@ module.exports = function(app){
         for (var i = 0; i < friends.length; i++) {
             console.log(friends[i].name);
             totalDiff = 0;
-        }
+        
 
         // loop thru the scores of each friend
         for (var j = 0; j < friends[i].scores[j]; j++) {
@@ -43,6 +43,7 @@ module.exports = function(app){
                 bestMatch.matchDiff = totalDiff;
             }
         }
+    }
     
     // save user's data to database
     friends.push(userData);

@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/jquery"></script>
-    <script src="https://surveyjs.azureedge.net/1.0.53/survey.jquery.js"></script>
-    <link href="https://surveyjs.azureedge.net/1.0.53/survey.css" type="text/css" rel="stylesheet" />
 
 </head>
 
@@ -33,7 +30,7 @@
                     <label for="name">What's your name?</label>
                     <input class="u-full-width" type="text" id="name">
                     <br>
-                    <label for="image">Put a link here to a photo of yourself.</label>
+                    <label for="photo">Put a link here to a photo of yourself.</label>
                     <input class="u-full-width" type="text" id="image">
                     <br>
                     <div class="container">
@@ -129,19 +126,9 @@
 
     <script type="text/javascript">
     
-        // Chosen CSS
-        var config = {
-            '.chosen-select': {},
-            '.chosen-select-deselect': { allow_single_deselect: true },
-            '.chosen-select-no-single': { disable_search_threshold: 10 },
-            '.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
-            '.chosen-select-width': { width: "95%" }
-        }
-        for (var selector in config) {
-            $(selector).chosen(config[selector]);
-        }
         // Capture the form inputs 
         $("#submit").on("click", function () {
+            console.log("I clicked submit");
             // Form validation
             function validateForm() {
                 var isValid = true;
